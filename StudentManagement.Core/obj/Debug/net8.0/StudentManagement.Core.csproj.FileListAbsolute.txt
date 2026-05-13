@@ -1,0 +1,11 @@
+D:\Machine_Test\StudentManagementSystem\StudentManagement.Core\bin\Debug\net8.0\StudentManagement.Core.deps.json
+D:\Machine_Test\StudentManagementSystem\StudentManagement.Core\bin\Debug\net8.0\StudentManagement.Core.dll
+D:\Machine_Test\StudentManagementSystem\StudentManagement.Core\bin\Debug\net8.0\StudentManagement.Core.pdb
+D:\Machine_Test\StudentManagementSystem\StudentManagement.Core\obj\Debug\net8.0\StudentManagement.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Machine_Test\StudentManagementSystem\StudentManagement.Core\obj\Debug\net8.0\StudentManagement.Core.AssemblyInfoInputs.cache
+D:\Machine_Test\StudentManagementSystem\StudentManagement.Core\obj\Debug\net8.0\StudentManagement.Core.AssemblyInfo.cs
+D:\Machine_Test\StudentManagementSystem\StudentManagement.Core\obj\Debug\net8.0\StudentManagement.Core.csproj.CoreCompileInputs.cache
+D:\Machine_Test\StudentManagementSystem\StudentManagement.Core\obj\Debug\net8.0\StudentManagement.Core.dll
+D:\Machine_Test\StudentManagementSystem\StudentManagement.Core\obj\Debug\net8.0\refint\StudentManagement.Core.dll
+D:\Machine_Test\StudentManagementSystem\StudentManagement.Core\obj\Debug\net8.0\StudentManagement.Core.pdb
+D:\Machine_Test\StudentManagementSystem\StudentManagement.Core\obj\Debug\net8.0\ref\StudentManagement.Core.dll

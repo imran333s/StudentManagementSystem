@@ -1,0 +1,10 @@
+namespace StudentManagement.Core.Entities;
+
+public class User
+{
+    public int Id { get; set; }
+    public string Username { get; set; } = string.Empty;
+    public string PasswordHash { get; set; } = string.Empty;
+    public string Role { get; set; } = "User"; // e.g. "Admin", "User"
+    public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
+}

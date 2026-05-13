@@ -1,0 +1,242 @@
+2026-05-13 13:26:02.392 +05:30 [FTL] Application terminated unexpectedly due to a fatal error.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\Machine_Test\StudentManagementSystem\StudentManagement.API\Program.cs:line 130
+2026-05-13 13:26:38.159 +05:30 [INF] Application pipeline configured successfully. Starting web server...
+2026-05-13 13:29:15.742 +05:30 [INF] HTTP GET / responded 301 in 16.4541 ms
+2026-05-13 13:29:15.818 +05:30 [INF] HTTP GET /index.html responded 200 in 57.4779 ms
+2026-05-13 13:29:15.892 +05:30 [INF] HTTP GET /swagger-ui.css responded 200 in 31.8884 ms
+2026-05-13 13:29:15.892 +05:30 [INF] HTTP GET /swagger-ui-standalone-preset.js responded 200 in 29.0657 ms
+2026-05-13 13:29:15.900 +05:30 [INF] HTTP GET /swagger-ui-bundle.js responded 200 in 38.4315 ms
+2026-05-13 13:29:16.100 +05:30 [INF] HTTP GET /favicon-32x32.png responded 200 in 0.2868 ms
+2026-05-13 13:29:16.174 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 95.8860 ms
+2026-05-13 13:30:03.365 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-13 13:30:04.521 +05:30 [ERR] Failed executing DbCommand (37ms) [Parameters=[@__username_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedDate], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2026-05-13 13:30:04.549 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'StudentManagement.Infrastructure.Data.ApplicationDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Users'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:26cb7a02-7e77-441d-aca8-8c93458bdd47
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Users'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:26cb7a02-7e77-441d-aca8-8c93458bdd47
+Error Number:208,State:1,Class:16
+2026-05-13 13:30:04.564 +05:30 [ERR] An unhandled exception occurred during the execution of the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Users'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at StudentManagement.Infrastructure.Repositories.UserRepository.GetByUsernameAsync(String username) in D:\Machine_Test\StudentManagementSystem\StudentManagement.Infrastructure\Repositories\UserRepository.cs:line 19
+   at StudentManagement.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in D:\Machine_Test\StudentManagementSystem\StudentManagement.Application\Services\AuthService.cs:line 27
+   at StudentManagement.API.Controllers.AuthController.Login(LoginDto loginDto) in D:\Machine_Test\StudentManagementSystem\StudentManagement.API\Controllers\AuthController.cs:line 28
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at StudentManagement.API.Middleware.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Machine_Test\StudentManagementSystem\StudentManagement.API\Middleware\GlobalExceptionMiddleware.cs:line 23
+ClientConnectionId:26cb7a02-7e77-441d-aca8-8c93458bdd47
+Error Number:208,State:1,Class:16
+2026-05-13 13:30:04.595 +05:30 [ERR] HTTP POST /api/Auth/login responded 500 in 1235.2989 ms
+2026-05-13 13:30:52.996 +05:30 [INF] HTTP GET /api/Students responded 401 in 11.2406 ms
+2026-05-13 13:30:58.692 +05:30 [INF] HTTP GET /index.html responded 200 in 0.3907 ms
+2026-05-13 13:30:58.842 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.7700 ms
+2026-05-13 13:30:58.886 +05:30 [INF] HTTP GET /index.html responded 200 in 0.2511 ms
+2026-05-13 13:30:58.941 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 10.5869 ms
+2026-05-13 13:31:33.457 +05:30 [FTL] Application terminated unexpectedly due to a fatal error.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\Machine_Test\StudentManagementSystem\StudentManagement.API\Program.cs:line 130
+2026-05-13 13:32:25.488 +05:30 [FTL] Application terminated unexpectedly due to a fatal error.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\Machine_Test\StudentManagementSystem\StudentManagement.API\Program.cs:line 130
+2026-05-13 13:32:36.205 +05:30 [FTL] Application terminated unexpectedly due to a fatal error.
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\Machine_Test\StudentManagementSystem\StudentManagement.API\Program.cs:line 130
+2026-05-13 13:33:13.624 +05:30 [INF] Application pipeline configured successfully. Starting web server...
+2026-05-13 13:33:42.360 +05:30 [INF] HTTP GET /index.html responded 200 in 62.7637 ms
+2026-05-13 13:33:42.510 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 94.7993 ms
+2026-05-13 13:34:04.366 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-13 13:34:05.385 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 1023.5858 ms
+2026-05-13 13:34:58.563 +05:30 [INF] HTTP GET /index.html responded 200 in 1.8534 ms
+2026-05-13 13:34:58.683 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 11.4845 ms
+2026-05-13 13:35:02.220 +05:30 [INF] HTTP GET /api/Students responded 401 in 8.7936 ms
+2026-05-13 13:35:20.465 +05:30 [INF] HTTP GET /api/Students responded 200 in 67.7098 ms
+2026-05-13 13:35:54.699 +05:30 [INF] HTTP POST /api/Students responded 201 in 200.6652 ms
+2026-05-13 13:35:59.872 +05:30 [INF] HTTP GET /index.html responded 200 in 0.3439 ms
+2026-05-13 13:35:59.993 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 10.5792 ms
+2026-05-13 13:36:12.961 +05:30 [INF] HTTP GET /api/Students responded 200 in 14.9695 ms
+2026-05-13 13:37:03.151 +05:30 [ERR] An unhandled exception occurred during the execution of the request.
+StudentManagement.Application.Exceptions.BadRequestException: Invalid username or password.
+   at StudentManagement.Application.Services.AuthService.LoginAsync(LoginDto loginDto) in D:\Machine_Test\StudentManagementSystem\StudentManagement.Application\Services\AuthService.cs:line 52
+   at StudentManagement.API.Controllers.AuthController.Login(LoginDto loginDto) in D:\Machine_Test\StudentManagementSystem\StudentManagement.API\Controllers\AuthController.cs:line 28
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at StudentManagement.API.Middleware.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Machine_Test\StudentManagementSystem\StudentManagement.API\Middleware\GlobalExceptionMiddleware.cs:line 23
+2026-05-13 13:37:03.166 +05:30 [INF] HTTP POST /api/Auth/login responded 400 in 27.0374 ms
+2026-05-13 13:38:30.488 +05:30 [INF] HTTP GET /index.html responded 200 in 0.3490 ms
+2026-05-13 13:38:30.609 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 5.6063 ms
+2026-05-13 13:38:48.678 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 8.0634 ms
+2026-05-13 13:38:49.644 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 2.7208 ms
+2026-05-13 13:40:05.381 +05:30 [INF] HTTP GET /index.html responded 200 in 0.2534 ms
+2026-05-13 13:40:05.446 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 5.2331 ms
+2026-05-13 13:40:44.169 +05:30 [INF] HTTP GET /api/Students responded 200 in 3.1638 ms
+2026-05-13 13:46:39.287 +05:30 [INF] HTTP PUT /api/Students/1 responded 400 in 31.4556 ms
+2026-05-13 13:48:01.757 +05:30 [ERR] An unhandled exception occurred during the execution of the request.
+StudentManagement.Application.Exceptions.BadRequestException: Student ID in the route does not match the ID in the request body.
+   at StudentManagement.Application.Services.StudentService.UpdateStudentAsync(Int32 id, UpdateStudentDto updateStudentDto) in D:\Machine_Test\StudentManagementSystem\StudentManagement.Application\Services\StudentService.cs:line 85
+   at StudentManagement.API.Controllers.StudentsController.Update(Int32 id, UpdateStudentDto updateStudentDto) in D:\Machine_Test\StudentManagementSystem\StudentManagement.API\Controllers\StudentsController.cs:line 73
+   at lambda_method144(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at StudentManagement.API.Middleware.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Machine_Test\StudentManagementSystem\StudentManagement.API\Middleware\GlobalExceptionMiddleware.cs:line 23
+2026-05-13 13:48:01.766 +05:30 [INF] HTTP PUT /api/Students/1 responded 400 in 13.7922 ms
+2026-05-13 13:48:12.461 +05:30 [INF] HTTP PUT /api/Students/1 responded 200 in 101.7112 ms
+2026-05-13 13:49:25.745 +05:30 [INF] HTTP GET /index.html responded 200 in 0.7119 ms
+2026-05-13 13:49:25.835 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.5914 ms
+2026-05-13 13:49:40.449 +05:30 [INF] HTTP POST /api/Students responded 401 in 0.4281 ms
+2026-05-13 13:49:59.534 +05:30 [INF] HTTP POST /api/Students responded 201 in 12.5890 ms
+2026-05-13 13:50:02.519 +05:30 [INF] HTTP GET /index.html responded 200 in 0.2866 ms
+2026-05-13 13:50:02.578 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.1884 ms
+2026-05-13 13:50:07.131 +05:30 [INF] HTTP GET /api/Students responded 401 in 0.1871 ms
+2026-05-13 13:50:16.696 +05:30 [INF] HTTP GET /api/Students responded 200 in 3.2426 ms
+2026-05-13 13:50:29.205 +05:30 [INF] HTTP DELETE /api/Students/2 responded 200 in 25.8596 ms
+2026-05-13 13:51:44.297 +05:30 [INF] HTTP GET /api/Students responded 200 in 3.8776 ms
+2026-05-13 13:51:46.108 +05:30 [INF] HTTP GET /api/Students responded 200 in 1.8380 ms
+2026-05-13 13:51:51.721 +05:30 [INF] HTTP GET /api/Students responded 401 in 0.3453 ms
+2026-05-13 13:52:22.142 +05:30 [INF] HTTP POST /api/Students responded 400 in 1.1888 ms
+2026-05-13 13:53:11.585 +05:30 [INF] HTTP GET /api/Students responded 200 in 3.6276 ms
+2026-05-13 13:54:23.710 +05:30 [INF] HTTP GET /api/Students/1 responded 200 in 11.0542 ms
+2026-05-13 13:54:29.447 +05:30 [ERR] An unhandled exception occurred during the execution of the request.
+StudentManagement.Application.Exceptions.NotFoundException: Entity "Student" (999) was not found.
+   at StudentManagement.Application.Services.StudentService.GetStudentByIdAsync(Int32 id) in D:\Machine_Test\StudentManagementSystem\StudentManagement.Application\Services\StudentService.cs:line 37
+   at StudentManagement.API.Controllers.StudentsController.GetById(Int32 id) in D:\Machine_Test\StudentManagementSystem\StudentManagement.API\Controllers\StudentsController.cs:line 42
+   at lambda_method163(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at StudentManagement.API.Middleware.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\Machine_Test\StudentManagementSystem\StudentManagement.API\Middleware\GlobalExceptionMiddleware.cs:line 23
+2026-05-13 13:54:29.455 +05:30 [INF] HTTP GET /api/Students/999 responded 404 in 10.4757 ms
+2026-05-13 14:02:30.932 +05:30 [INF] Application pipeline configured successfully. Starting web server...
+2026-05-13 14:02:38.448 +05:30 [INF] HTTP GET /index.html responded 200 in 63.8653 ms
+2026-05-13 14:02:38.595 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 101.8895 ms
+2026-05-13 14:03:06.294 +05:30 [INF] HTTP POST /api/Auth/login responded 307 in 4.0447 ms
+2026-05-13 14:03:06.393 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 405 in 22.0915 ms
+2026-05-13 14:03:12.471 +05:30 [INF] HTTP POST /api/Auth/login responded 307 in 0.1853 ms
+2026-05-13 14:03:12.480 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 405 in 1.5641 ms
+2026-05-13 14:03:13.294 +05:30 [INF] HTTP POST /api/Auth/login responded 307 in 0.0684 ms
+2026-05-13 14:03:13.304 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 405 in 2.5351 ms
+2026-05-13 14:03:13.476 +05:30 [INF] HTTP POST /api/Auth/login responded 307 in 0.0767 ms
+2026-05-13 14:03:13.481 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 405 in 0.1342 ms
+2026-05-13 14:05:49.583 +05:30 [INF] HTTP POST /api/Auth/login responded 307 in 0.1006 ms
+2026-05-13 14:05:49.599 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 405 in 0.2241 ms
+2026-05-13 14:05:50.935 +05:30 [INF] HTTP POST /api/Auth/login responded 307 in 0.0624 ms
+2026-05-13 14:05:50.940 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 405 in 0.1386 ms
+2026-05-13 14:05:52.015 +05:30 [INF] HTTP POST /api/Auth/login responded 307 in 0.0966 ms
+2026-05-13 14:05:52.020 +05:30 [INF] HTTP OPTIONS /api/Auth/login responded 405 in 0.1864 ms
+2026-05-13 14:07:25.576 +05:30 [INF] Application pipeline configured successfully. Starting web server...
+2026-05-13 14:07:28.050 +05:30 [INF] HTTP GET /index.html responded 200 in 60.2649 ms
+2026-05-13 14:07:28.284 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 95.5596 ms
+2026-05-13 14:07:53.438 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 2861.8742 ms
+2026-05-13 14:08:11.257 +05:30 [INF] HTTP GET /api/Students responded 200 in 77.1338 ms
